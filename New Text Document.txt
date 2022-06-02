@@ -1,0 +1,22 @@
+create database umr
+
+create table sales2(Empl_num int,name varchar(50),age int,
+rep_office int,title varchar(50),hire_date date,manager int
+ , qouta varchar(50),sales varchar(50) )
+
+ select *from sales2
+
+ insert into sales2  values(107,'nancy angelli',49,22,'sales rep','14-nov-88',108,'$300,000.00','$186,042.00')
+
+ select Empl_num,name,title,qouta,sales from sales2             -- question no 1
+
+ select *from sales2 where hire_date>'1-feb-1988' and hire_date<'1-nov-1990' -- question no 2
+
+ select *from sales2 where manager in(104,108,101)  -- question no 3
+
+ select *from sales2 where name like('%ch')  -- question n0 4
+
+  select empl_num,name,age from sales2 where name like('_a%') -- question n0 5
+
+  alter table sales2 add email varchar(50)
+  insert into sales2(email) values (www.google.com'
